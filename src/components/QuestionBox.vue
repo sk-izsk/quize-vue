@@ -23,7 +23,9 @@
         :disabled="selectedIndex === null || answered"
         >Submit</b-button
       >
-      <b-button @click="next" variant="success" href="#">Next</b-button>
+      <b-button @click="next" variant="success" :disabled="indexed === 9"
+        >Next</b-button
+      >
     </b-jumbotron>
   </div>
 </template>
@@ -36,6 +38,7 @@ export default {
     currentQuestion: Object,
     next: Function,
     increment: Function,
+    indexed: Number,
   },
   data() {
     return {

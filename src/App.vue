@@ -9,6 +9,7 @@
             :next="next"
             v-if="questions.length"
             :increment="increment"
+            :indexed="index"
           />
         </b-col>
       </b-row>
